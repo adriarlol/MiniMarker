@@ -55,6 +55,7 @@ class ImageResizer:
 
 
 # 使用示例
+
 input_image_path = 'inputImage/1.jpg'  # 替换为您的输入图片路径
 output_image_path = 'outputImage/New_1.jpg'  # 替换为您的输出图片路径
 target_size_mb = 1.5  # 目标文件大小为2MB
