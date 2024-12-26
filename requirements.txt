@@ -1,0 +1,21 @@
+allure-pytest==2.13.5
+allure-python-commons==2.13.5
+attrs==24.2.0
+certifi==2024.8.30
+cffi @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_06ndtibm2c/croot/cffi_1726856446111/work
+charset-normalizer==3.4.0
+cryptography @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_c5inr2hqv1/croot/cryptography_1732129882466/work
+exceptiongroup @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_b2258scr33/croot/exceptiongroup_1706031391815/work
+ffprobe==0.5
+idna==3.10
+iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
+packaging @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_81ri4yfpjw/croot/packaging_1720101866878/work
+pillow==11.0.0
+pluggy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_bei6q1cvvt/croot/pluggy_1733169621717/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+PyMySQL @ file:///Users/ktietz/demo/mc3/conda-bld/pymysql_1629702202458/work
+pytest @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_3ailxghqbl/croot/pytest_1717793250782/work
+PyYAML==6.0.2
+requests==2.32.3
+tomli @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_d0e5ffbf-5cf1-45be-8693-c5dff8108a2awhthtjlq/croots/recipe/tomli_1657175508477/work
+urllib3==2.2.3
