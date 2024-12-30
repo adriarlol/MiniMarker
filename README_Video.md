@@ -51,46 +51,46 @@ pip install -r requirements.txt
 要处理指定目录下的所有视频文件，请使用如下命令：
 
 ```bash
-python video_compressor.py input_dir output_dir log_dir --target-size-mb 8
+python video_compressor.py input_video output_video log --target-size-mb 8
 ```
 
-这将处理`input_dir`中的所有视频文件，并将压缩后的文件保存到`output_dir`中，日志文件和其他中间文件将被保存到`log_dir`中。
+这将处理`input_video`中的所有视频文件，并将压缩后的文件保存到`output_video`中，日志文件和其他中间文件将被保存到`log`中。
 
 #### 单独处理（指定文件）
 
 要仅处理指定的单个视频文件，请使用如下命令：
 
 ```bash
-python video_compressor.py inputVideo/New_Post.mp4 output_dir log_dir --target-size-mb 8
+python video_compressor.py inputVideo/New_Post.mp4 output_video log --target-size-mb 8
 ```
 
-这将仅处理`inputVideo/New_Post.mp4`文件，并将压缩后的文件保存到`output_dir`中，日志文件和其他中间文件将被保存到`log_dir`中。
+这将仅处理`inputVideo/1.mp4`文件，并将压缩后的文件保存到`output_video`中，日志文件和其他中间文件将被保存到`log`中。
 
 ### 参数说明
 
-| 参数名            | 描述                                                     | 示例值                |
-|-----------------|--------------------------------------------------------|---------------------|
-| `input_path`     | 输入路径（可以是文件或目录）。                                  | `inputVideo/New_Post.mp4` 或 `input_dir` |
-| `output_path`    | 输出目录路径，用于存放压缩后的视频文件。                                | `output_dir`         |
-| `log_path`       | 日志目录路径，用于存放压缩过程中的日志文件和其他中间文件。                      | `log_dir`           |
-| `--target-size-mb` | 目标文件大小（单位：MB，默认5MB）。                                | `8`                 |
+| 参数名            | 描述                                                     | 示例值                         |
+|-----------------|--------------------------------------------------------|-----------------------------|
+| `input_path`     | 输入路径（可以是文件或目录）。                                  | `input_video/1.mp4` 或 `input_video` |
+| `output_path`    | 输出目录路径，用于存放压缩后的视频文件。                                | `output_video`              |
+| `log_path`       | 日志目录路径，用于存放压缩过程中的日志文件和其他中间文件。                      | `log`                       |
+| `--target-size-mb` | 目标文件大小（单位：MB，默认5MB）。                                | `8`                         |
 
 ### 运行示例
 
 #### 批量处理示例
 
-假设您的视频文件存放在`input_videos`目录中，希望将压缩后的文件保存到`compressed_videos`目录中，并将日志文件保存到`logs`目录中，您可以运行以下命令：
+假设您的视频文件存放在`input_video`目录中，希望将压缩后的文件保存到`output_video`目录中，并将日志文件保存到`log`目录中，您可以运行以下命令：
 
 ```bash
-python video_compressor.py input_videos compressed_videos logs --target-size-mb 10
+python video_compressor.py input_video output_video log --target-size-mb 8
 ```
 
 #### 单独处理示例
 
-如果您只想处理一个名为`example_video.mp4`的视频文件，并将其压缩后保存到`compressed_videos`目录中，您可以运行以下命令：
+如果您只想处理一个名为`1.mp4`的视频文件，并将其压缩后保存到`output_video`目录中，您可以运行以下命令：
 
 ```bash
-python video_compressor.py example_video.mp4 compressed_videos logs --target-size-mb 10
+python video_compressor.py input_video/1.mp4 output_video log --target-size-mb 6
 ```
 
 ## 文件结构
