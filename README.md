@@ -1,6 +1,4 @@
-# MiniMarker
-
-# 图像、视频处理工具类
+# MiniMarker：图像、视频压缩工具类
 
 ## 简介
 
@@ -58,36 +56,36 @@ python video_compressor.py input_video output_video log --target-size-mb 8
 要仅处理指定的单个视频文件，请使用如下命令：
 
 ```bash
-python video_compressor.py inputVideo/New_Post.mp4 output_video log --target-size-mb 8
+python video_compressor.py input_video/1.mp4 output_video log --target-size-mb 8
 ```
 
-这将仅处理`inputVideo/1.mp4`文件，并将压缩后的文件保存到`output_video`中，日志文件和其他中间文件将被保存到`log`中。
+这将仅处理`input_video/1.mp4`文件，并将压缩后的文件保存到`output_video`中，日志文件和其他中间文件将被保存到`log`中。
 
 ### 参数说明
 
-| 参数名            | 描述                                                     | 示例值                         |
-|-----------------|--------------------------------------------------------|-----------------------------|
+| 参数名            | 描述                                                     | 示例值                |
+|-----------------|--------------------------------------------------------|---------------------|
 | `input_path`     | 输入路径（可以是文件或目录）。                                  | `input_video/1.mp4` 或 `input_video` |
-| `output_path`    | 输出目录路径，用于存放压缩后的视频文件。                                | `output_video`              |
-| `log_path`       | 日志目录路径，用于存放压缩过程中的日志文件和其他中间文件。                      | `log`                       |
-| `--target-size-mb` | 目标文件大小（单位：MB，默认5MB）。                                | `8`                         |
+| `output_path`    | 输出目录路径，用于存放压缩后的视频文件。                                | `output_video`         |
+| `log_path`       | 日志目录路径，用于存放压缩过程中的日志文件和其他中间文件。                      | `log`           |
+| `--target-size-mb` | 目标文件大小（单位：MB，默认5MB）。                                | `8`                 |
 
-### 运行示例
+## 运行示例
 
-#### 批量处理示例
+### 批量处理示例
 
 假设您的视频文件存放在`input_video`目录中，希望将压缩后的文件保存到`output_video`目录中，并将日志文件保存到`log`目录中，您可以运行以下命令：
 
 ```bash
-python video_compressor.py input_video output_video log --target-size-mb 8
+python video_compressor.py input_video output_video log --target-size-mb 10
 ```
 
-#### 单独处理示例
+### 单独处理示例
 
 如果您只想处理一个名为`1.mp4`的视频文件，并将其压缩后保存到`output_video`目录中，您可以运行以下命令：
 
 ```bash
-python video_compressor.py input_video/1.mp4 output_video log --target-size-mb 6
+python video_compressor.py input_video/1.mp4 output_video log --target-size-mb 10
 ```
 
 ## 文件结构
@@ -100,8 +98,22 @@ project_root/
 ├── README.md                 # 项目文档
 ├── requirements.txt          # 项目依赖列表
 ├── video_compressor.py       # 包含 VideoCompressor 类的脚本
-└── example.py                # 示例代码
+├── input_video/              # 输入路径，存放待处理的视频文件
+│   ├── 1.mp4                 # 示例视频文件
+│   └── ...                   # 其他视频文件
+├── output_video/             # 输出路径，存放处理后的视频文件
+└── log/                      # 日志路径，存放日志文件和其他中间文件
 ```
+
+### 文件结构说明
+
+- **`project_root/`**：项目的根目录。
+- **`README.md`**：项目文档，提供详细的使用说明和注意事项。
+- **`requirements.txt`**：项目依赖列表，列出所有需要安装的Python库。
+- **`video_compressor.py`**：主脚本文件，包含`VideoCompressor`类及其功能实现。
+- **`input_video/`**：输入路径，用于存放待处理的视频文件。您可以在此文件夹中放置多个视频文件进行批量处理。
+- **`output_video/`**：输出路径，用于存放处理后的视频文件。压缩后的视频文件将保存在此文件夹中，并保留原始文件名。
+- **`log/`**：日志路径，用于存放压缩过程中的日志文件和其他中间文件。这些文件有助于调试和记录压缩过程。
 
 ## 注意事项
 
@@ -125,9 +137,6 @@ A: 视频压缩是一个计算密集型任务，尤其是两遍编码模式下�
 
 A: 该工具已在Windows、macOS和Linux上进行了测试，应该可以在这些操作系统上正常工作。如果有任何兼容性问题，请随时联系我们。
 
+## 联系方式
 
----
-
-希望这份详细的`README.md`能帮助您更好地理解和使用这个视频压缩工具。如果有任何其他需求或需要进一步的帮助，请随时告知！
-
-```
+如果您有任何问题或建议，请随时告知！
