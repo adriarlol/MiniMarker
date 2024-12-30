@@ -70,23 +70,6 @@ python video_compressor.py input_video/1.mp4 output_video log --target-size-mb 8
 | `log_path`       | 日志目录路径，用于存放压缩过程中的日志文件和其他中间文件。                      | `log`           |
 | `--target-size-mb` | 目标文件大小（单位：MB，默认5MB）。                                | `8`                 |
 
-## 运行示例
-
-### 批量处理示例
-
-假设您的视频文件存放在`input_video`目录中，希望将压缩后的文件保存到`output_video`目录中，并将日志文件保存到`log`目录中，您可以运行以下命令：
-
-```bash
-python video_compressor.py input_video output_video log --target-size-mb 10
-```
-
-### 单独处理示例
-
-如果您只想处理一个名为`1.mp4`的视频文件，并将其压缩后保存到`output_video`目录中，您可以运行以下命令：
-
-```bash
-python video_compressor.py input_video/1.mp4 output_video log --target-size-mb 10
-```
 
 ## 文件结构
 
