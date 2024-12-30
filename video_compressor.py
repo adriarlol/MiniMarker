@@ -120,12 +120,10 @@ if __name__ == "__main__":
     compressor.process_videos()
 
 # 使用方法
-# 指定目录（批量处理）
-# 要处理指定目录下的所有视频文件，请在命令行中输入如下命令：
+# 指定目录（批量处理）：要处理指定目录下的所有视频文件，请在命令行中输入如下命令：
 # python video_compressor.py input_video output_video log --target-size-mb 8
 # 这将处理input_dir中的所有视频文件，并将压缩后的文件保存到output_dir中，日志文件和其他中间文件将被保存到log_dir中。
 #
-# 指定文件（单独处理）
-# 要仅处理指定的单个视频文件，请在命令行中输入如下命令：
+# 指定文件（单独处理）：要仅处理指定的单个视频文件，请在命令行中输入如下命令：
 # python video_compressor.py input_video/New_Post.mp4 output_video log --target-size-mb 6
 # 这将仅处理inputVideo/New_Post.mp4文件，并将压缩后的文件保存到output_dir中，日志文件和其他中间文件将被保存到log_dir中。
